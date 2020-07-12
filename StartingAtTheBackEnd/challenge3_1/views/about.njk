@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="/about.css">
+    <title>{{data.title}}</title>
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <img src="{{data.img}}" alt="{{data.alt}}">
+        <h1>{{data.h1}}</h1>
+        <p>{{data.description}}</p>
+        
+        <ul>
+            {%for item in data.list%}
+            <li>{{item.tecnology}}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="links">
+            {% for link in data.links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %} 
+    

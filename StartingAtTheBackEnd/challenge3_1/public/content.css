@@ -1,0 +1,102 @@
+/*=== CARDS CURSO ===*/
+
+
+.cursos {
+    max-width: 1200px;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.curso{
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--color-backcurso);
+}
+
+.box-content {
+    padding: 3%;
+}
+
+.curso .curso_img_container {
+ padding: 25px;  
+}
+
+.curso .curso_content {
+    font-size: 24px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.curso .curso_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    gap: 20px; 
+}
+
+.curso_modules {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+
+.curso_price {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+
+#starter:hover {
+   border: 3px solid var(--color-rocket);
+   transition: 400ms;
+   color: var(--color-rocket);
+   
+}
+
+#starter .curso_modules {
+    border: 1px solid var(--color-rocket);
+}
+
+#starter .curso_price {
+    border: 1px solid var(--color-rocket);
+}
+
+#launchbase:hover {
+    border: 3px solid var(--color-launch);
+    transition: 400ms;
+    color:var(--color-launch);
+ }
+
+ #launchbase .curso_info {
+    padding-top: 26px;
+}
+ 
+
+#launchbase .curso_modules {
+    border: 1px solid var(--color-launch);
+}
+
+#launchbase .curso_price {
+    border: 1px solid var(--color-launch);
+}
+
+#gostack:hover {
+    border: 3px solid var(--color-stack);
+    transition: 400ms;
+    color: var(--color-stack);
+ }
+
+#gostack .curso_info {
+    padding-top: 26px;
+}
+
+#gostack .curso_modules {
+    border: 1px solid var(--color-stack);
+}
+
+#gostack .curso_price {
+    border: 1px solid var(--color-stack);
+}
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/assets/favicon.ico?" type="image/x-icon" />
+    <link rel="stylesheet" href="/layout.css">
+    {% block head %}
+        <title>Desafio 1° HTML</title>
+        
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div>
+            {% for link in dataHeader.linksHeader%}
+            <a href="{{link.url}}">{{link.name}}</a>
+            {% endfor %}
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>

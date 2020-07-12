@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{dataCourses.title}}</title>
+    <link rel="stylesheet" href="/content.css">
+{% endblock %}
+    
+    
+
+{% block content %}
+    <section class="cursos">
+
+        {% for curso in dataCourses.cursos %}
+        <div class="curso" id="{{curso.id}}">
+            <div class="box-content">
+                <div class="curso_img_container">
+                    <img src="{{curso.img}}" alt="imagem de {{curso.id}}">
+                </div>
+                <div class="curso_content">
+                    <p>{{curso.title}}</p>
+                </div>
+                <div class="curso_info">
+                    <p class="curso_modules">{{curso.modules}}</p>
+                    <p class="curso_price">{{curso.price}}</p>
+                </div>
+            </div>
+            
+        </div>
+        {% endfor %}
+
+    </section>
+   
+    
+    <script src="scripts.js"></script>
+{% endblock %}
