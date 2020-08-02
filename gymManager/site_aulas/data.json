@@ -1,0 +1,13 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Thalys Matias Carrara",
+      "avatar_url": "https://www.facebook.com/thalys.matiascarrara/",
+      "instruction_degree": "Ensino Superior",
+      "type_of_class": "distancia",
+      "subjects": "Programação",
+      "created_at": 1595301748130
+    }
+  ]
+}

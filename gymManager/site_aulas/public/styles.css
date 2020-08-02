@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --color-rocket: #7159c1;
+    --primary-color: #7159c1;
+    --secondary-color: #F7DF1E;
 }
 
 * {
@@ -56,4 +57,92 @@ header {
     width: 100%;
     transition: width 400ms cubic-bezier(0.74,-0.15, 0.63, 1.05);
 }
+
+/* === CARD === */
+
+.card {
+    width: 800px;
+    min-height: 400px;
+    background-color: white;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    /* sombreamento */ 
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    animation-name: up;
+    animation-timing-function: linear;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+
+@keyframes up {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.card .img {
+    background: url('https://source.unsplash.com/collection/517198/400x600');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* === Details === */
+
+.details {
+    padding: 16px;
+    text-align: center;
+    align-self: center;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 8px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.details .item span {
+    padding:  4px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: #777;
+    display: inline-block;
+    margin-right: 4px;
+
+}
+
 

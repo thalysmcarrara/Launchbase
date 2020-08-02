@@ -1,0 +1,31 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Thalys Matias Carrara",
+      "birth": 1594339200000,
+      "gender": "M",
+      "services": "Javascript nodeJS",
+      "created_at": 1595288608210
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "FONN",
+      "birth": 1593475200000,
+      "gender": "F",
+      "services": "Java mySQL",
+      "created_at": 1595288646819
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://facebook.com",
+      "name": "José ",
+      "birth": 1594771200000,
+      "gender": "M",
+      "services": "C++ PostGree",
+      "created_at": 1595288806597
+    }
+  ]
+}
